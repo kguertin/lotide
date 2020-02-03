@@ -6,7 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const head = function(array){
+const head = function(array) {
   let firstElem = array[0];
 
   if (array.length < 1) {

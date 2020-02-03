@@ -1,0 +1,24 @@
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(`\u{1F525} Assertion Passed: ${actual} === ${expected}`);
+  } else if (actual !== expected) {
+    console.log(`\u{1F5D1}  Assertion Failed: ${actual} !== ${expected}`);
+  }
+};
+
+const tail = function(array) {
+  let arrayTail = array.slice(1);
+  
+  if (array.length < 2) {
+    arrayTail = [];
+  }
+
+  return arrayTail;
+};
+
+const words = ['Toronto', 'Raptors', 'NBA', 'Champions'];
+tail(words);
+assertEqual(words.length, 4);
+
+console.log(tail([1]));
+console.log(tail([]));
