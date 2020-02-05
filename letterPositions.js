@@ -12,7 +12,8 @@ const assertArraysEqual = function(arr1, arr2) {
   return result ? 'The arrays are equal' : 'The arrays are not equal';
 };
 
-const letterPositions = function(sentence) {
+const letterPositions = function(string) {
+  let sentence = string.toLowerCase();
   const results = {};
   let position = 0;
   for (let letter of sentence) {
@@ -25,3 +26,5 @@ const letterPositions = function(sentence) {
 };
 
 console.log(assertArraysEqual(letterPositions('hello').e, [1]));
+
+console.log(letterPositions('Toronto Raptors NBA Champions'))
