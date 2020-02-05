@@ -32,6 +32,8 @@ const without = function(source, itemsToRemove) {
 
 console.log(without([1,2,3,], [4, 5, 3]));
 console.log(without(['lets', 'go', 'celtics', false], ['raptors', 'celtics', false]));
-
 console.log(assertArraysEqual(without([1,2,3,8, 9], [6,7,8]), [1,2,3,9]));
 
+const words = ['hello', 'world', 'lighthouse'];
+without(words, ['lighthouse'])
+console.log(assertArraysEqual(words, ['hello', 'world', 'lighthouse']));
