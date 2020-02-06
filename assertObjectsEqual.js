@@ -42,9 +42,9 @@ const assertObjectsEqual = function(actual, expected){
 
   let result = eqObjects(actual, expected);
 
-  if (result === true){
+  if (result){
     console.log(`\u{1F525} Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
-  } else if (result == false) {
+  } else if (!result) {
     console.log(`\u{1F5D1} Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
 }
