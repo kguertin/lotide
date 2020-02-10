@@ -31,6 +31,8 @@ const middle = function(arr) {
   return output;
 }
 
+module.exports = middle;
+
 //Test Cases
 console.log(middle([1,2,3,4,5,6,9]))
 console.log(middle([1,6,4,8]));
