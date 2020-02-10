@@ -1,3 +1,5 @@
+
+
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`\u{1F525} Assertion Passed: ${actual} === ${expected}`);
@@ -17,5 +19,7 @@ const countLetters = function(sentence) {
   }
   return result;
 };
+
+module.exports = countLetters;
 
 console.log(countLetters('Toronto Raptors NBA Champions'));

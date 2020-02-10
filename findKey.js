@@ -34,5 +34,7 @@ const startingFive = {
   C: 'Marc Gasol'
 }
 
+module.exports = findKey;
+
 console.log(findKey(startingFive, x => x === 'Fred VanVleet'))
 assertEqual(findKey(startingFive, x => x === 'Kyle Lowry'), 'PG');

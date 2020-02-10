@@ -30,6 +30,8 @@ const without = function(source, itemsToRemove) {
   return newArray
 }
 
+module.exports = without;
+
 console.log(without([1,2,3,], [4, 5, 3]));
 console.log(without(['lets', 'go', 'celtics', false], ['raptors', 'celtics', false]));
 console.log(assertArraysEqual(without([1,2,3,8, 9], [6,7,8]), [1,2,3,9]));

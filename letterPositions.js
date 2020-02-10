@@ -25,6 +25,8 @@ const letterPositions = function(string) {
   return results;
 };
 
+module.exports = letterPositions;
+
 console.log(assertArraysEqual(letterPositions('hello').e, [1]));
 
 console.log(letterPositions('Toronto Raptors NBA Champions'))

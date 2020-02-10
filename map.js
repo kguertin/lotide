@@ -21,6 +21,8 @@ const map = function (arr, callback){
   return results;
 }
 
+module.exports = map;
+
 const results1 = map(startingFive, word => word[0]);
 const results2 = map(startingFive, word => word += ' NBA Champion');
 const results3 = map(startingFive, word => word.toUpperCase());

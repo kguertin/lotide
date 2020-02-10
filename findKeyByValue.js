@@ -21,6 +21,8 @@ const findKeyByValue = (object, string) => {
   return key ? key : undefined;
 }
 
+module.exports = findKeyByValue;
+
 const startingFive = {
   PG: 'Kyle Lowry',
   SG: 'Fred VanVleet',

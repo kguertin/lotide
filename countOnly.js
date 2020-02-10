@@ -1,3 +1,4 @@
+
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`\u{1F525} Assertion Passed: ${actual} === ${expected}`);
@@ -27,6 +28,8 @@ const firstNames = [
   'Fang',
   'Joe'
 ];
+
+module.exports = countOnly;
 
 console.log(countOnly(firstNames, {'Jason': true, 'Karima': true, 'Fang': true}));
 
