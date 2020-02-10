@@ -1,10 +1,12 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`\u{1F525} Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    console.log(`\u{1F5D1}  Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`\u{1F525} Assertion Passed: ${actual} === ${expected}`);
+//   } else if (actual !== expected) {
+//     console.log(`\u{1F5D1}  Assertion Failed: ${actual} !== ${expected}`);
+//   }
+ 
+const assertEqual = require('./assertEqual');
+
 
 const tail = function(array) {
   let arrayTail = array.slice(1);
@@ -16,9 +18,5 @@ const tail = function(array) {
   return arrayTail;
 };
 
-const words = ['Toronto', 'Raptors', 'NBA', 'Champions'];
-tail(words);
-assertEqual(words.length, 4);
 
-console.log(tail([1]));
-console.log(tail([]));
+module.exports = tail;
